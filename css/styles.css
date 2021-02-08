@@ -92,8 +92,26 @@ body {
   color: var(--primary-text-color);
 }
 
+.header-site-nav-items .list {
+  position: relative;
+  height: 16px;
+  width: auto;
+}
+
 .header-site-nav-items .list:not(:last-child) {
   margin-right: 50px;
+}
+
+.header-site-nav-items .link:hover::after,
+.header-site-nav-items .link:active::after,
+.header-site-nav-items .link:focus::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--hover-text-color);
+  margin-top: 39px;
 }
 
 .header-address .link {
@@ -113,19 +131,12 @@ body {
 
 .address-icon {
   fill: currentColor;
-  width: 16px;
-  height: 12px;
-}
-
-.tel {
-  width: 10px;
-  height: 16px;
 }
 
 .header .link {
   transition-property: color;
   transition-duration: 250ms;
-  transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header .link:hover,
@@ -316,7 +327,7 @@ body {
   align-items: center;
   transition-property: background-color;
   transition-duration: 250ms;
-  transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list:not(:last-child) {
@@ -326,7 +337,7 @@ body {
 .social-list .link .icon {
   transition-property: fill;
   transition-duration: 250ms;
-  transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list .link:hover .icon,
@@ -357,7 +368,7 @@ body {
   align-items: center;
   transition-property: border;
   transition-duration: 250ms;
-  transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-list:not(:last-child) {
@@ -367,7 +378,7 @@ body {
 .customers-list .link .icon {
   transition-property: fill;
   transition-duration: 250ms;
-  transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-list .link:hover .icon,
@@ -428,7 +439,7 @@ body {
   background-color: var(--icons-bg-footer-color);
   transition-property: background-color;
   transition-duration: 250ms;
-  transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .social-list .link:hover,
@@ -468,7 +479,7 @@ body {
   margin-right: 8px;
   transition-property: outline, background-color, color, box-shadow;
   transition-duration: 250ms;
-  transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .display-button:hover,
@@ -492,7 +503,7 @@ body {
   font-size: 0;
   transition-property: outline, box-shadow;
   transition-duration: 250ms;
-  transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-list:not(:nth-child(3n)) {
@@ -623,7 +634,7 @@ body {
 .close-modal-btn svg {
   transition-property: fill;
   transition-duration: 250ms;
-  transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {

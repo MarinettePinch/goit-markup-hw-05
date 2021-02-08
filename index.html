@@ -38,7 +38,7 @@
           <ul class="header-site-nav-address flex">
             <li class="list">
               <a class="link flex" href="mailto:info@devstudio.com">
-                <svg width="20" height="15">
+                <svg width="16" height="12">
                   <use
                     class="address-icon"
                     href="./img/sprite.svg#envelope"
@@ -49,9 +49,9 @@
             </li>
             <li class="list">
               <a class="link flex" href="tel:+380961111111">
-                <svg width="13.75" height="22">
+                <svg width="10" height="16">
                   <use
-                    class="address-icon tel"
+                    class="address-icon"
                     href="./img/sprite.svg#smartphone"
                   ></use>
                 </svg>
@@ -70,7 +70,9 @@
           <h1 class="main-section-title title-upp">
             Эффективные решения для вашего бизнеса
           </h1>
-          <a class="link main-section-link" href="#">Заказать услугу</a>
+          <a class="link main-section-link" href="#" data-modal-open
+            >Заказать услугу</a
+          >
         </div>
       </section>
       <!--/main section-->
@@ -514,16 +516,20 @@
         </div>
       </div>
     </footer>
-    <--! modal window-->
-    <div class="backdrop is-hidden">
+    <!-- modal window-->
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal flex">
-        <button class="button close-modal-btn">
+        <button class="button close-modal-btn" data-modal-close>
           <svg width="11" height="11">
             <use href="./img/sprite.svg#form-close-btn"></use>
           </svg>
         </button>
       </div>
     </div>
-    <--!/modal window-->
+    <!--/modal window-->
+
+    <!--script-->
+    <script src="./js/modal.js"></script>
+    <!--/script-->
   </body>
 </html>
