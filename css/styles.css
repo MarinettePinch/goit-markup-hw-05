@@ -104,7 +104,8 @@ body {
 
 .header-site-nav-items .link:hover::after,
 .header-site-nav-items .link:active::after,
-.header-site-nav-items .link:focus::after {
+.header-site-nav-items .link:focus::after,
+.current::after {
   content: "";
   display: inline-block;
   width: 100%;
@@ -175,8 +176,6 @@ body {
 }
 
 .main-section-title {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
